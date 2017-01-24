@@ -65,19 +65,19 @@ SystemJS.config({
         "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.0.0",
         "cesium": "github:aelatgt/cesium@referenceFrames",
         "mobile-detect": "npm:mobile-detect@1.3.2",
-        "os": "github:jspm/nodelibs-os@0.2.0-alpha",
+        "os": "npm:jspm-nodelibs-os@0.2.0",
         "ts": "github:frankwallis/plugin-typescript@5.0.9",
         "urijs": "github:medialize/URI.js@1.18.1"
     },
     packages: {
-        "github:jspm/nodelibs-os@0.2.0-alpha": {
-            "map": {
-                "os-browserify": "npm:os-browserify@0.2.1"
-            }
-        },
         "github:frankwallis/plugin-typescript@5.0.9": {
             "map": {
                 "typescript": "npm:typescript@2.0.0"
+            }
+        },
+        "npm:jspm-nodelibs-os@0.2.0": {
+            "map": {
+                "os-browserify": "npm:os-browserify@0.2.1"
             }
         }
     }
